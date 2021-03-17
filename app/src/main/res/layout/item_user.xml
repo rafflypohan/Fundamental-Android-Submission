@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/CardBackground"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="10dp"
+        app:cardCornerRadius="18dp"
+        app:strokeColor="#31363c"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_user"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/user1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/TextColor.Header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:textSize="16sp"
+                    tools:text="Nama" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    style="@style/TextColor.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-6dp"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/poppins_reg"
+                    android:textSize="12sp"
+                    tools:text="Username" />
+
+
+                <TextView
+                    android:id="@+id/tv_follower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:drawablePadding="5dp"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/poppins_reg"
+                    android:textColor="@color/light"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_people_alt_24"
+                    tools:text="12 followers" />
+
+                <TextView
+                    android:id="@+id/tv_repository"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:elegantTextHeight="true"
+                    android:fontFamily="@font/poppins_reg"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/light"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_baseline_book_24"
+                    tools:text="Repository" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>
